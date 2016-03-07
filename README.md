@@ -8,7 +8,7 @@ Usage:
 
 2. Upload to GAE:
 
-       appcfg.py update app.yaml
+        appcfg.py update app.yaml
 
 3. Navigate to https://opencraft-otp.appspot.com/seed to create the tables in
    the Datastore.
@@ -18,5 +18,5 @@ Usage:
 
 5. To receive a key for $APP encrypted with the key for user $SSH_KEY_USER, run
 
-       curl -s https://opencraft-otp.appspot.com/$APP/$SSH_KEY_USER |
-           openssl pkeyutl -decrypt -inkey ~/.ssh/id_rsa -pkeyopt rsa_padding_mode:oaep
+        curl -s https://opencraft-otp.appspot.com/$APP/$SSH_KEY_USER |
+            openssl pkeyutl -decrypt -inkey ~/.ssh/id_rsa -pkeyopt rsa_padding_mode:oaep
